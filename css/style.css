@@ -21,27 +21,27 @@ body {
   /*sets the font size to 16 px*/
   font-weight: 300;
   /*sets the font weiht to 300 */
-  line-height: 1, 6;
+  line-height: 1.6;
   /*sets the line height to 1,6 * the font-size */
   color: #353535;
 }
 
 h1, h2, h3, h4 {
-  line-height: 1, 4;
+  line-height: 1.4;
 }
 
 h1 {
-  font-size: 2, 25em;
+  font-size: 2.25em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1, 75em;
+  font-size: 1.75em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1, 35em;
+  font-size: 1.35em;
   font-weight: 400;
 }
 
@@ -54,61 +54,29 @@ img {
   width: 100%;
 }
 
-#logo {
-  width: 150px;
+.logo {
+  max-width: 150px;
+}
+
+header {
   background-color: #ffffff;
 }
 
-#header {
-  background-color: #ffffff;
-}
-
-#hero {
-  background-color: #d9d9d9;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 16px;
-  /*sets the font size to 16 px*/
-  font-weight: 300;
-  /*sets the font weiht to 300 */
-  line-height: 1, 6;
-  /*sets the line height to 1,6 * the font-size */
-  color: #2a4d4f;
-}
-
-#work {
-  background-color: #d9d9d9;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 16px;
-  /*sets the font size to 16 px*/
-  font-weight: 300;
-  /*sets the font weiht to 300 */
-  line-height: 1, 6;
-  /*sets the line height to 1,6 * the font-size */
-  color: #2a4d4f;
-}
-
-#contact {
+footer {
   background-color: #e1fdff;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 16px;
-  /*sets the font size to 16 px*/
-  font-weight: 300;
-  /*sets the font weiht to 300 */
-  line-height: 1, 6;
-  /*sets the line height to 1,6 * the font-size */
   color: #1c3a45;
 }
 
 a {
   color: #2a4d4f;
-  font-weight: 400;
-  text-decoration: none;
+  font-weight: 300;
+  text-decoration: underline;
   /*no underlining*/
 }
 
 a:visited {
   /*visited link*/
-  color: #284b63;
+  color: #2a4d4f;
 }
 
 a:hover, a:focus {
@@ -127,8 +95,8 @@ a:active {
   background-color: #c3fbff;
   color: #3c6e71;
   font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
+  padding: 8px;
+  border-radius: 15px;
   borderbottom: 2px solid #c3fbff;
   transition: 0.2s opacity;
 }
@@ -137,17 +105,6 @@ a:active {
   opacity: 0.8;
   /*reduces the opacity of the button to 80% */
   text-decoration: none;
-}
-
-.button:active {
-  /*selected button*/
-  background-color: #d9f5ff;
-  color: #2a4d4f;
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #d9f5ff;
-  transition: 0.2s opacity;
 }
 
 .button.contact {
@@ -162,23 +119,8 @@ a:active {
   color: #1c3a45;
 }
 
-.button.contact:active {
-  background-color: #d9d9d9;
-  color: #2a4d4f;
-  text-transform: uppercase;
-  border: 2px solid #d9d9d9;
-}
-
 .button.download {
-  display: inline-block;
-  background-color: #c3fbff;
-  color: #3c6e71;
-  font-weight: 400;
   text-align: center;
-  padding: 10px;
-  border-radius: 3px;
-  borderbottom: 2px solid #c3fbff;
-  transition: 0.2s opacity;
 }
 
 .button.download:hover {
