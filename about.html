@@ -37,27 +37,28 @@
         <h1>About me</h1>
       </div>
     </div>
-    <div class="section about">
+    <div id="about">
       <div class="container">
+        <div class="picture">
         <picture>
           <source srcset="img/about/Aline_Prinz_mob_1x.jpeg" media="(max-width:767px)">
           <img src="img/about/Aline_Prinz_des_2x.jpeg" alt="Profile Picture Aline Prinz">
         </picture>
-        <div class="row">
-          <div class="column">
+      </div>
+        <div class="upperrow">
+          <div class="col-md-6 col-lg-7">
             <h2>My Story</h2>
             <p>I’m Aline, a Berlin-based UX Designer, and UX Researcher. Combining my interests in psychology, design, communication, and technology with my love for details and the wish to create human-centered experiences in every situation, I am
               dedicated to creating solutions that will have users pausing to say: „that was one of the best experiences I ever had.“.Diving deeper into usability testing methods like cardsorting, in-depth interviews, remote usability tests, and
               inclusive design, I am committed to learning new things every day! I work in a focused, fast, and concentrated manner and am more than ready to make a difference in a dynamic team that considers the client’s satisfaction most essential.
               While working on various projects, consulting customers with different needs, and doing research for - and mainly with - a variety of users, creating the best possible experience for everyone is always my priority.
             </p>
-            <a href="files/CV_DE.pdf" target="_blank" class="button download"> Download my CV <br>(german - 74 KB)</a>
-            <a href="files/CV_EN.pdf" target="_blank" class="button download"> Download my CV <br> (english - (66 KB)</a>
+            <a href="files/CV_DE.pdf" target="_blank" id="button" class="button download"> <span class="spancv"> View CV </span> <br>(german - 74 KB)</a>
+            <a href="files/CV_EN.pdf" target="_blank" id="button" class="button download"> <span class="spancv"> View CV </span> <br>(english - 66 KB)</a>
           </div>
-          <div id=skills>
+          <div id=skills class="row">
             <h2>Skills & Tools</h2>
-            <div class="row">
-              <div class="column">
+              <div class="col-md-6 col-lg-5">
                 <h3>UX Skills</h3>
                 <ul class="skills">
                   <li>User Flows</li>
@@ -70,9 +71,9 @@
                   <li>Inclusive Design</li>
                 </ul>
               </div>
-              <div>
+              <div class="col-md-6 col-lg-5">
                 <h3>Technical Skills</h3>
-                <ul>
+                <ul class="skills">
                   <li>Adobe XD</li>
                   <li>Sketch</li>
                   <li>InDesign</li>
@@ -151,6 +152,6 @@
       <p>Copyright: Aline Prinz 2020</p>
     </div>
   </footer>
-  </body>
+</body>
 
-  </html>
+</html>
