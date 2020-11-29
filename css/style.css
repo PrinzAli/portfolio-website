@@ -441,9 +441,14 @@ animation: [animation-duration] [animation-name] [animation-iteration-count] [an
   height: auto;
 }
 
-main {text-align: center;}
+main {
+  text-align: center;
+}
 
-#about {text-align: left;}
+#about {
+  text-align: left;
+}
+
 /* =============== extra-large devices (1920px or larger) ========== */
 @media only screen and (min-width: 1920px) {
   .container {
