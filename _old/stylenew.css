@@ -1,0 +1,64 @@
+/*
+Colors used:
+Primary Colors:
+Teal: #081F28
+yellow: #EFE9AA
+red: #CD4441
+blue: #88C0BD
+Beige: #F4F2F6
+orange: #CD8645
+tourquise: #52a5c5
+berry red: #B23C57
+dark blue: #1D2331
+*/
+/* ========= general styling ============= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4F2F6;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1em;
+  /*sets the font size to 16 px*/
+  font-weight: 300;
+  /*sets the font weiht to 300 */
+  line-height: 1.6;
+  /*sets the line height to 1,6 * the font-size */
+  color: #1D2331;
+  text-align: left;
+}
+
+main {
+  text-align: left;
+  padding-top: 146px;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 600;
+  color: #2a4d4f;
+}
+
+h3 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
