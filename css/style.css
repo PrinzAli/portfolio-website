@@ -1,14 +1,12 @@
 /*
 Colors used:
 Primary Colors:
-yellow: #EFE9AA;
-red: #CD4441;
-tourquise: #88C0BD;
-Beige: #F4F2F6;
-orange: #CD8645;
-blue: #52a5c5;
-berry red: #B23C57;
-dark blue: #1D2331;
+yellow: #FACD3D
+purple: #5626C4
+berry red: #E60576
+turqouise: #2cccc3
+black: #000000
+dark grey: #202020
 */
 /* ========= general styling ============= */
 * {
@@ -16,15 +14,15 @@ dark blue: #1D2331;
 }
 
 body {
-  background-color: #F4F2F6;
+  background-color: #202020;
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
   /*sets the font size to 16 px*/
   font-weight: 300;
   /*sets the font weiht to 300 */
   line-height: 1.6;
   /*sets the line height to 1,6 * the font-size */
-  color: #1D2331;
+  color: #ffffff;
   text-align: left;
 }
 
@@ -45,12 +43,25 @@ h1 {
 h2 {
   font-size: 1.75em;
   font-weight: 600;
-  color: #1D2331;
+  text-decoration: overline;
+  text-decoration-color: #E60576;
+  text-decoration-style: wavy;
 }
+
+#contact h2 {
+text-decoration-color: #2cccc3;}
 
 h3 {
   font-size: 1.35em;
   font-weight: 400;
+  color: #E60576;
+}
+
+#about h3 {
+  color: #ffffff;
+  text-decoration: overline;
+  text-decoration-color: #facd3d;
+  text-decoration-style: wavy;
 }
 
 h4 {
@@ -63,29 +74,43 @@ img {
 }
 
 .logo {
-  max-width: 96px;
-  background-color: #F4F2F6;
-  padding: 10px;
-  border-radius: 15px;
+  max-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
 }
 
 .picture {
-  max-width: 767px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
   height: auto;
+  display: block;
+  margin: auto auto;
+  max-width: 450px;
 }
 
-#skills h3 {text-decoration: underline;}
+.round {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-color: #facd3d;
+  border-width: 5px;
+  border-style: dashed;
+}
+
+#skills h3 {
+  text-decoration: underline;
+}
+
 /* =========== Styling Prototype Plugin ========= */
 .prototype {
   padding: 0.325em;
+  background-color: #ffffff;
 }
 
 /* ========= Header ========== */
 header {
-  background-color: #d9d9d9;
+  background-color: #000000;
   text-align: center;
   padding: 10px 0;
   position: fixed;
@@ -94,6 +119,7 @@ header {
   -webkit-box-shadow: 6px 8px 10px -4px rgba(50, 50, 50, 0.64);
   -moz-box-shadow: 6px 8px 10px -4px rgba(50, 50, 50, 0.64);
   box-shadow: 6px 8px 10px -4px rgba(50, 50, 50, 0.64);
+  border-bottom: 10px;
 }
 
 /* ======= Navigation ========= */
@@ -115,33 +141,47 @@ nav>ul>li>a {
   padding: 0 0.938em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #1D2331;
+  color: #ffffff;
   text-decoration: none;
 }
 
 nav>ul>li>a:visited {
-  color: #1D2331;
+  color: #ffffff;
 }
 
 nav>ul>li>a:hover {
-  color: #B23C57;
+  color: #2cccc3;
   text-decoration: none;
   font-weight: 700;
 }
 
-/* ============== Hero ========== */
+/* ============== Hero and work ========== */
 #hero span {
   display: block;
   font-size: 0.8em;
-  color: #1D2331;
+  color: #2cccc3;
   font-weight: 300;
 }
 
 #hero {
-  background-color: #F4F2F6;
-  padding: 1.25em 0;
+  background-color: #202020;
+  padding-top: 10px;
   display: inline-block;
   width: 100%;
+}
+
+
+/* ======== Pfeile ==== */
+#pfeil-1 {
+  fill: #facd3d;
+}
+
+#pfeil-2 {
+  fill: #E60576;
+}
+
+#pfeil-3 {
+  fill: #2cccc3;
 }
 
 /* ======== Container, Rows and Columns ========== */
@@ -158,66 +198,84 @@ nav>ul>li>a:hover {
 
 /* ========== Links and Buttons ========= */
 a {
-  color: #1D2331;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a.social {
+  margin-top: 0.3em;
+  padding-right: 1.5em;
   text-decoration: none;
 }
 
 a:hover {
-  color: #B23C57;
+  color: #2cccc3;
   text-decoration: underline;
   font-weight: 400;
 }
 
 a:focus {
-  color: #B23C57;
+  color: #2cccc3;
   text-decoration: underline;
 }
 
 .button {
   display: inline-block;
-  background-color: #B23C57;
   color: #ffffff;
   font-weight: 400;
   padding: 0.5em 3em;
+  border: 1px solid #E60576;
   border-radius: 20px;
+  border-color: #E60576;
   transition: 0.2s;
 }
 
 .button:hover {
+  background-color: #E60576;
   color: #ffffff;
   text-decoration: none;
-  opacity: 0.8;
+  font-weight: bold;
 }
 
 .button:active {
   display: inline-block;
-  background-color: #B23C57;
+  background-color: #E60576;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: bold;
   transition: 0.2s opacity;
 }
 
 .button.contact {
-  background-color: #1D2331;
-  color: #ffffff;
+  border: 1px solid #2cccc3;
   text-transform: uppercase;
+  color: #2cccc3;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
 .button.contact:hover {
-  background: #B23C57;
-  color: #ffffff;
+  background: #2cccc3;
+  color: #001730;
+  font-weight: bold;
   opacity: 1;
 }
 
 .button.download {
   padding: 0.3 1em;
-  margin-right: 0.6em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* ======= About === */
+.aboutme {
+  max-width: 600px;
+  margin: left auto;
 }
 
 /* ========= Illustration ======= */
 .berlin-illustration {
+  background-color: #ffffff;
+  border-radius: 15px;
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -273,21 +331,30 @@ animation: [animation-duration] [animation-name] [animation-iteration-count] [an
 transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
 
 /* ====== Footer ===== */
-#contact {
-  text-align: left;
-  display: inline-block;
-  padding: 0 1em;
-}
-
 .social {
-  margin-top: 0.8em;
-  margin-right: 0.8em;
+  margin-top: 0.3em;
+  padding: 0 1.5em;
   display: inline-block;
   text-decoration: none;
 }
 
 .social:hover {
-  color: #B23C57;
+  opacity: 0.8;
+}
+
+#contact {
+  text-align: center;
+  background-color: #000000;
+  padding: 10px 10px;
+  width: 100%;
+  display: inline-block;
+}
+
+#contact span {
+  display: block;
+  font-size: 0.8em;
+  color: #2cccc3;
+  font-weight: 300;
 }
 
 /* ===================== Medium devices (640px and larger) ============= */
@@ -296,6 +363,14 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
   /* ============ general styling ===== */
   body {
     font-size: 1.2em;
+  }
+
+  #contact {
+    text-align: center;
+    background-color: #000000;
+    padding: 10px 10px;
+    width: 100%;
+    display: inline-block;
   }
 
   /* ========== header and headlines =========== */
@@ -312,6 +387,10 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 
   #about h3 {
     margin-top: 0;
+    color: #ffffff;
+    text-decoration: overline;
+    text-decoration-color: #facd3d;
+    text-decoration-style: wavy;
   }
 
   /* ========== main ========= */
@@ -321,14 +400,20 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 
   /* ============= rows and columns ============= */
   #skills .column {
-    background: #ffffff;
+    background: #000000;
+    border-color: #2cccc3;
+    border-style: dashed;
+    border-width: 1.5px;
+    border-radius: 25px;
     padding: 2em 1em;
     text-align: center;
     margin: 0 1%;
     max-width: 48%;
   }
 
-  #skills .row {margin: 0 -1%}
+  #skills .row {
+    margin: 0 -1%
+  }
 
   .col-md-1 {
     width: 8.33%;
@@ -398,6 +483,14 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
     margin-right: auto;
   }
 
+  #contact {
+    text-align: center;
+    background-color: #000000;
+    padding: 10px 10px;
+    width: 100%;
+    display: inline-block;
+  }
+
   header {
     text-align: unset;
     padding: 1.25em 0 0.813em;
@@ -457,7 +550,10 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
     width: 91.66%;
   }
 
-.col-lg-12 {width: 100%;}
+  .col-lg-12 {
+    width: 100%;
+  }
+
   #skills .column {
     max-width: 100%;
     margin-bottom: 1em;
@@ -476,6 +572,4 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 }
 
 /* ==================== X-large devices (1440px or larger) ============== */
-@media only screen and (min-width:1440px) {
-
-}
+@media only screen and (min-width:1440px) {}
