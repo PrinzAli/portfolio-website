@@ -7,30 +7,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
-
+  <script src="https://kit.fontawesome.com/90cd41ceca.js" crossorigin="anonymous"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/Users/aline/Desktop/Portfolio Site Aline Prinz/img/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/Users/aline/Desktop/Portfolio Site Aline Prinz/img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/Users/aline/Desktop/Portfolio Site Aline Prinz/img/favicon/favicon-16x16.png">
-<link rel="manifest" href="/Users/aline/Desktop/Portfolio Site Aline Prinz/img/favicon/site.webmanifest">
-<link rel="mask-icon" href="/Users/aline/Desktop/Portfolio Site Aline Prinz/img/favicon/safari-pinned-tab.svg" color="#2cccc3">
-<link rel="shortcut icon" href="/Users/aline/Desktop/Portfolio Site Aline Prinz/img/favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="msapplication-config" content="/Users/aline/Desktop/Portfolio Site Aline Prinz/img/favicon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Users/aline/Desktop/Portfolio Site Aline Prinz/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Users/aline/Desktop/Portfolio Site Aline Prinz/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/Users/aline/Desktop/Portfolio Site Aline Prinz/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/Users/aline/Desktop/Portfolio Site Aline Prinz/img/favicon/safari-pinned-tab.svg" color="#2cccc3">
+  <link rel="shortcut icon" href="/Users/aline/Desktop/Portfolio Site Aline Prinz/img/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-config" content="/Users/aline/Desktop/Portfolio Site Aline Prinz/img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <title>Urban Hunter - Schnitzeljagd App by Aline Prinz</title>
 </head>
 
 <body>
   <header>
-    <div class="container">
-      <a href="index.html"> <img src="img/logo.png" alt="Logo Aline Prinz" class="logo"> </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="container" id="navigation">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"> <img src="img/logo.png" alt="Logo Aline Prinz" class="logo"> </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -43,9 +46,9 @@
             <source srcset="img/urban/collage_UrbanHunter_mob_1x.png" media="(max-width:767px)">
             <img src="img/urban/collage_UrbanHunter_des_2x.png" alt="Urban Hunter Collage">
           </picture>
-          <p> <svg height="25px" width="25px"id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
+          <p> <svg height="25px" width="25px" id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
               <defs>
-                <style >
+                <style>
                   .cls-1 {
                     fill: #facd3d;
                   }
@@ -54,8 +57,18 @@
               <polygon id="pfeil-1" points="0 0 0 255.24 0 255.24 140.29 135.84 0 0" />
             </svg>
             This project was part of my UX Design Course with CareerFoundry. The task was to create a scavenger hunt app that enables players to enjoy social scavenger hunts for real objects and locations in their own cities. Implementing my love for
-            traveling and geocaching, I decided to create an application that gives users the possibility of exploring cities in a fun and entertaining way while providing the opportunity to create their own hunts. <h3 align="right"><span><svg width="25px" height="25px" id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24"><defs><style>.cls-1{fill:#facd3d;}</style></defs><polygon id="pfeil-1" points="140.29 0 140.29 255.24 140.29 255.24 0 135.84 140.29 0"/></svg></span></h3>
-  </p>
+            traveling and geocaching, I decided to create an application that gives users the possibility of exploring cities in a fun and entertaining way while providing the opportunity to create their own hunts.
+          <h3 align="right"><span><svg width="25px" height="25px" id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #facd3d;
+                    }
+                  </style>
+                </defs>
+                <polygon id="pfeil-1" points="140.29 0 140.29 255.24 140.29 255.24 0 135.84 140.29 0" />
+              </svg></span></h3>
+          </p>
 
         </div>
       </div>
@@ -65,9 +78,9 @@
         <h2>My Process</h2>
         <div class="row">
 
-          <h3><svg height="15px" width="15px"id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
+          <h3><svg height="15px" width="15px" id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
               <defs>
-                <style >
+                <style>
                   .cls-1 {
                     fill: #facd3d;
                   }
@@ -92,9 +105,9 @@
           </picture>
         </div>
         <div class="row">
-          <h3><svg height="15px" width="15px"id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
+          <h3><svg height="15px" width="15px" id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
               <defs>
-                <style >
+                <style>
                   .cls-1 {
                     fill: #facd3d;
                   }
@@ -114,9 +127,9 @@
           </picture>
         </div>
         <div class="row">
-          <h3><svg height="15px" width="15px"id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
+          <h3><svg height="15px" width="15px" id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
               <defs>
-                <style >
+                <style>
                   .cls-1 {
                     fill: #facd3d;
                   }
@@ -134,9 +147,9 @@
           </picture>
         </div>
         <div class="row">
-          <h3><svg height="15px" width="15px"id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
+          <h3><svg height="15px" width="15px" id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
               <defs>
-                <style >
+                <style>
                   .cls-1 {
                     fill: #facd3d;
                   }
@@ -157,9 +170,9 @@
           </picture>
         </div>
         <div class="row">
-          <h3><svg height="15px" width="15px"id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
+          <h3><svg height="15px" width="15px" id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
               <defs>
-                <style >
+                <style>
                   .cls-1 {
                     fill: #facd3d;
                   }
@@ -182,21 +195,30 @@
       <div class="container">
         <h2>What I learned</h2>
         <div class="row">
-            <p> <svg height="25px" width="25px"id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
+          <p> <svg height="25px" width="25px" id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #facd3d;
+                  }
+                </style>
+              </defs>
+              <polygon id="pfeil-1" points="0 0 0 255.24 0 255.24 140.29 135.84 0 0" />
+            </svg>
+            A lot! The process was very intense and as I had no background in design, I was happy to learn some new things in this field, too. I learned that people are different - and that is good! Nevertheless, everyone has different pain points,
+            opinions, and emotions when using a product. It is not possible to create an app that will be a complete dream of an app for everyone. It is possible though, to find solutions that make many users happy and it is always possible to
+            improve. I am a big fan of the iterative process because it helps to find problems before I put too much work into a product. It is possible to focus on the important steps of a design process
+            this way and have the users’ wishes in mind. I cannot wait to learn more. Do you have projects I can help you with and which will teach me even more? I am looking forward to your message!
+          <h3 align="right"><span><svg width="25px" height="25px" id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24">
                 <defs>
-                  <style >
+                  <style>
                     .cls-1 {
                       fill: #facd3d;
                     }
                   </style>
                 </defs>
-                <polygon id="pfeil-1" points="0 0 0 255.24 0 255.24 140.29 135.84 0 0" />
-              </svg>
-            A lot! The process was very intense and as I had no background in design, I was happy to learn some new things in this field, too. I learned that people are different - and that is good! Nevertheless, everyone has different pain points,
-            opinions, and emotions when using a product. It is not possible to create an app that will be a complete dream of an app for everyone. It is possible though, to find solutions that make many users happy and it is always possible to
-            improve. I am a big fan of the iterative process because it helps to find problems before I put too much work into a product. It is possible to focus on the important steps of a design process
-            this way and have the users’ wishes in mind. I cannot wait to learn more. Do you have projects I can help you with and which will teach me even more? I am looking forward to your message!  <h3 align="right"><span><svg width="25px" height="25px" id="Ebene_1" data-name="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.29 255.24"><defs><style>.cls-1{fill:#facd3d;}</style></defs><polygon id="pfeil-1" points="140.29 0 140.29 255.24 140.29 255.24 0 135.84 140.29 0"/></svg></span></h3
-  </p>
+                <polygon id="pfeil-1" points="140.29 0 140.29 255.24 140.29 255.24 0 135.84 140.29 0" />
+              </svg></span></h3 </p>
 
         </div>
       </div>
@@ -265,7 +287,9 @@
       <p>Copyright: Aline Prinz 2020</p>
     </div>
   </footer>
-    <script src="js/scripts.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-  </html>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -49,7 +49,8 @@ h2 {
 }
 
 #contact h2 {
-text-decoration-color: #2cccc3;}
+  text-decoration-color: #2cccc3;
+}
 
 h3 {
   font-size: 1.35em;
@@ -74,7 +75,7 @@ img {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 150px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
@@ -111,7 +112,6 @@ img {
 /* ========= Header ========== */
 header {
   background-color: #000000;
-  text-align: center;
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -123,18 +123,23 @@ header {
 }
 
 /* ======= Navigation ========= */
-nav {
-  display: inline-block;
-  width: 100%;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 40px;
+  padding-right: 0;
+  color: #2cccc3;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -142,7 +147,6 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-weight: 700;
   color: #ffffff;
-  text-decoration: none;
 }
 
 nav>ul>li>a:visited {
@@ -153,6 +157,25 @@ nav>ul>li>a:hover {
   color: #2cccc3;
   text-decoration: none;
   font-weight: 700;
+}
+
+.navtoggle, .navtoggle.responsive {
+  display: block;
+  position: relative;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgb(44, 204, 195);
+}
+
+.navtoggle.responsive nav {
+  padding: 65px 0 0;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 /* ============== Hero and work ========== */
@@ -169,7 +192,6 @@ nav>ul>li>a:hover {
   display: inline-block;
   width: 100%;
 }
-
 
 /* ======== Pfeile ==== */
 #pfeil-1 {
@@ -365,6 +387,22 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
     font-size: 1.2em;
   }
 
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   #contact {
     text-align: center;
     background-color: #000000;
@@ -376,7 +414,7 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
   /* ========== header and headlines =========== */
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 20px 0 4px;
   }
 
   nav {
@@ -395,7 +433,7 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 
   /* ========== main ========= */
   main {
-    padding-top: 7em;
+    padding-top: 56px;
   }
 
   /* ============= rows and columns ============= */
@@ -502,6 +540,15 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
     margin-top: 0.25em;
   }
 
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   main {
     padding-top: 7em;
   }
@@ -572,4 +619,12 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 }
 
 /* ==================== X-large devices (1440px or larger) ============== */
-@media only screen and (min-width:1440px) {}
+@media only screen and (min-width:1440px) {
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+}
