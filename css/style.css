@@ -168,7 +168,10 @@ nav>ul>li>a:hover {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgb(44, 204, 195);
+  text-align: center;
 }
+
+
 
 .navtoggle.responsive nav {
   padding: 65px 0 0;
@@ -401,6 +404,12 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 
   .navtoggle li:last-child {
     display: none;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
   }
 
   #contact {
