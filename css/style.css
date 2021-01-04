@@ -123,19 +123,6 @@ header {
 }
 
 /* ======= Navigation ========= */
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 25px;
-  font-size: 40px;
-  padding-right: 0;
-  color: #2cccc3;
-}
-
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -159,6 +146,19 @@ nav>ul>li>a:hover {
   font-weight: 700;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 40px;
+  padding-right: 0;
+  color: #2cccc3;
+}
+
 .navtoggle, .navtoggle.responsive {
   display: block;
   position: relative;
@@ -170,8 +170,6 @@ nav>ul>li>a:hover {
   border-top: 1px solid rgb(44, 204, 195);
   text-align: center;
 }
-
-
 
 .navtoggle.responsive nav {
   padding: 65px 0 0;
@@ -405,13 +403,6 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
   .navtoggle li:last-child {
     display: none;
   }
-
-  .navtoggle.responsive li {
-    display: block;
-    padding: 10px 0;
-    text-align: center;
-  }
-
   #contact {
     text-align: center;
     background-color: #000000;
@@ -548,8 +539,6 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
     float: right;
     margin-top: 0.25em;
   }
-
-
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
