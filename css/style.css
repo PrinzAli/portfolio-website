@@ -2,7 +2,6 @@
 Colors used:
 Primary Colors:
 yellow: #FACD3D
-purple: #5626C4
 berry red: #E60576
 turqouise: #2cccc3
 black: #000000
@@ -18,7 +17,7 @@ dark grey: #202020
    font-family: 'Alegreya Sans', sans-serif;
    font-size: 1.1em;
    /*sets the font size to 16 px*/
-   font-weight: 300; 
+   font-weight: 300;
    /*sets the font weiht to 300 */
    line-height: 1.6;
    /*sets the line height to 1,6 * the font-size */
